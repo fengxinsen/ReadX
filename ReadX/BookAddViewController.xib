@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BookAddViewController" customModule="ReadX" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="2iE-tT-Rz1" id="IjD-yn-DkK"/>
+                <outlet property="comboBox" destination="1p1-CJ-R7T" id="LsB-Ad-u2G"/>
+                <outlet property="msg" destination="J29-x1-bFa" id="6nZ-S0-bRv"/>
+                <outlet property="textField" destination="oy8-xG-opb" id="7c7-bi-EyN"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy8-xG-opb">
+                    <rect key="frame" x="20" y="57" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JZs-4L-QrO"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="请输入" drawsBackground="YES" id="OsX-3O-ifo">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2iE-tT-Rz1">
+                    <rect key="frame" x="239" y="13" width="67" height="32"/>
+                    <buttonCell key="cell" type="push" title="确定" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hcc-e7-3SA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="clickAction:" target="-2" id="nwM-Eq-tnP"/>
+                    </connections>
+                </button>
+                <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1p1-CJ-R7T">
+                    <rect key="frame" x="20" y="17" width="83" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="1hj-iZ-rDT"/>
+                    </constraints>
+                    <comboBoxCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="支持站点" drawsBackground="YES" numberOfVisibleItems="5" id="2nY-ro-BxX">
+                        <font key="font" metaFont="cellTitle"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </comboBoxCell>
+                </comboBox>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Orf-uX-Gnk">
+                    <rect key="frame" x="172" y="13" width="67" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S4U-53-Fcm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancelAction:" target="-2" id="9qC-ag-N5l"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J29-x1-bFa">
+                    <rect key="frame" x="106" y="22" width="66" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="nHE-PT-pPu">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1p1-CJ-R7T" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="DXB-lu-v1d"/>
+                <constraint firstAttribute="trailing" secondItem="2iE-tT-Rz1" secondAttribute="trailing" constant="20" id="NbK-Xd-wMM"/>
+                <constraint firstItem="oy8-xG-opb" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="YWv-P2-Nga"/>
+                <constraint firstAttribute="trailing" secondItem="oy8-xG-opb" secondAttribute="trailing" constant="20" id="heg-T4-jm1"/>
+                <constraint firstAttribute="bottom" secondItem="2iE-tT-Rz1" secondAttribute="bottom" constant="20" id="ie6-mR-rIh"/>
+                <constraint firstItem="2iE-tT-Rz1" firstAttribute="top" secondItem="oy8-xG-opb" secondAttribute="bottom" priority="750" constant="16" id="lAK-AW-TXe"/>
+                <constraint firstItem="oy8-xG-opb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="t65-J1-LBv"/>
+                <constraint firstItem="2iE-tT-Rz1" firstAttribute="centerY" secondItem="1p1-CJ-R7T" secondAttribute="centerY" id="wm4-ae-O99"/>
+            </constraints>
+            <point key="canvasLocation" x="11" y="119.5"/>
+        </customView>
+    </objects>
+</document>

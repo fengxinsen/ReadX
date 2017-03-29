@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BC591F6D769844FDE7B6C0A /* Pods_ReadX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDD659A2C1FE8A55F2ED66E /* Pods_ReadX.framework */; };
+		FA1982ED1E8251E000E642BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1982EC1E8251E000E642BC /* AppDelegate.swift */; };
+		FA1982EF1E8251E000E642BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1982EE1E8251E000E642BC /* Assets.xcassets */; };
+		FA1982F21E8251E000E642BC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1982F01E8251E000E642BC /* MainMenu.xib */; };
+		FA1983141E8252CC00E642BC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1982F91E8252CC00E642BC /* BaseViewController.swift */; };
+		FA1983151E8252CC00E642BC /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1982FA1E8252CC00E642BC /* BaseViewController.xib */; };
+		FA1983161E8252CC00E642BC /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1982FB1E8252CC00E642BC /* BaseWindowController.swift */; };
+		FA1983171E8252CC00E642BC /* BaseWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1982FC1E8252CC00E642BC /* BaseWindowController.xib */; };
+		FA1983181E8252CC00E642BC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1982FD1E8252CC00E642BC /* Book.swift */; };
+		FA1983191E8252CC00E642BC /* BookAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1982FE1E8252CC00E642BC /* BookAddViewController.swift */; };
+		FA19831A1E8252CC00E642BC /* BookAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1982FF1E8252CC00E642BC /* BookAddViewController.xib */; };
+		FA19831B1E8252CC00E642BC /* BookChaptersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983001E8252CC00E642BC /* BookChaptersCell.swift */; };
+		FA19831C1E8252CC00E642BC /* BookChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983011E8252CC00E642BC /* BookChaptersViewController.swift */; };
+		FA19831D1E8252CC00E642BC /* BookChaptersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1983021E8252CC00E642BC /* BookChaptersViewController.xib */; };
+		FA19831E1E8252CC00E642BC /* BookRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983031E8252CC00E642BC /* BookRoomCell.swift */; };
+		FA19831F1E8252CC00E642BC /* BookRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983041E8252CC00E642BC /* BookRoomViewController.swift */; };
+		FA1983201E8252CC00E642BC /* BookRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1983051E8252CC00E642BC /* BookRoomViewController.xib */; };
+		FA1983211E8252CC00E642BC /* BookSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983061E8252CC00E642BC /* BookSettingViewController.swift */; };
+		FA1983221E8252CC00E642BC /* BookSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1983071E8252CC00E642BC /* BookSettingViewController.xib */; };
+		FA1983231E8252CC00E642BC /* BookSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983081E8252CC00E642BC /* BookSingle.swift */; };
+		FA1983241E8252CC00E642BC /* BookWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983091E8252CC00E642BC /* BookWindowController.swift */; };
+		FA1983251E8252CC00E642BC /* BookWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19830A1E8252CC00E642BC /* BookWindowController.xib */; };
+		FA1983261E8252CC00E642BC /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = FA19830B1E8252CC00E642BC /* db.sqlite3 */; };
+		FA1983271E8252CC00E642BC /* ReadBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19830C1E8252CC00E642BC /* ReadBookViewController.swift */; };
+		FA1983281E8252CC00E642BC /* ReadBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19830D1E8252CC00E642BC /* ReadBookViewController.xib */; };
+		FA1983291E8252CC00E642BC /* ReadWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19830E1E8252CC00E642BC /* ReadWindowController.swift */; };
+		FA19832A1E8252CC00E642BC /* ReadWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19830F1E8252CC00E642BC /* ReadWindowController.xib */; };
+		FA19832B1E8252CC00E642BC /* rule.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1983101E8252CC00E642BC /* rule.json */; };
+		FA19832C1E8252CC00E642BC /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983111E8252CC00E642BC /* Rule.swift */; };
+		FA19832D1E8252CC00E642BC /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983121E8252CC00E642BC /* SQLiteManager.swift */; };
+		FA19832E1E8252CC00E642BC /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1983131E8252CC00E642BC /* Tools.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DDD659A2C1FE8A55F2ED66E /* Pods_ReadX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4938377C1B1E43C84824AFC2 /* Pods-ReadX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadX/Pods-ReadX.release.xcconfig"; sourceTree = "<group>"; };
+		66FB085E384FE0D0FFAA2C46 /* Pods-ReadX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadX/Pods-ReadX.debug.xcconfig"; sourceTree = "<group>"; };
+		FA1982E91E8251E000E642BC /* ReadX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1982EC1E8251E000E642BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA1982EE1E8251E000E642BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA1982F11E8251E000E642BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA1982F31E8251E000E642BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1982F91E8252CC00E642BC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA1982FA1E8252CC00E642BC /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		FA1982FB1E8252CC00E642BC /* BaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
+		FA1982FC1E8252CC00E642BC /* BaseWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseWindowController.xib; sourceTree = "<group>"; };
+		FA1982FD1E8252CC00E642BC /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		FA1982FE1E8252CC00E642BC /* BookAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAddViewController.swift; sourceTree = "<group>"; };
+		FA1982FF1E8252CC00E642BC /* BookAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookAddViewController.xib; sourceTree = "<group>"; };
+		FA1983001E8252CC00E642BC /* BookChaptersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersCell.swift; sourceTree = "<group>"; };
+		FA1983011E8252CC00E642BC /* BookChaptersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersViewController.swift; sourceTree = "<group>"; };
+		FA1983021E8252CC00E642BC /* BookChaptersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookChaptersViewController.xib; sourceTree = "<group>"; };
+		FA1983031E8252CC00E642BC /* BookRoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRoomCell.swift; sourceTree = "<group>"; };
+		FA1983041E8252CC00E642BC /* BookRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRoomViewController.swift; sourceTree = "<group>"; };
+		FA1983051E8252CC00E642BC /* BookRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookRoomViewController.xib; sourceTree = "<group>"; };
+		FA1983061E8252CC00E642BC /* BookSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSettingViewController.swift; sourceTree = "<group>"; };
+		FA1983071E8252CC00E642BC /* BookSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookSettingViewController.xib; sourceTree = "<group>"; };
+		FA1983081E8252CC00E642BC /* BookSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSingle.swift; sourceTree = "<group>"; };
+		FA1983091E8252CC00E642BC /* BookWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookWindowController.swift; sourceTree = "<group>"; };
+		FA19830A1E8252CC00E642BC /* BookWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookWindowController.xib; sourceTree = "<group>"; };
+		FA19830B1E8252CC00E642BC /* db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite3; sourceTree = "<group>"; };
+		FA19830C1E8252CC00E642BC /* ReadBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadBookViewController.swift; sourceTree = "<group>"; };
+		FA19830D1E8252CC00E642BC /* ReadBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadBookViewController.xib; sourceTree = "<group>"; };
+		FA19830E1E8252CC00E642BC /* ReadWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWindowController.swift; sourceTree = "<group>"; };
+		FA19830F1E8252CC00E642BC /* ReadWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadWindowController.xib; sourceTree = "<group>"; };
+		FA1983101E8252CC00E642BC /* rule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rule.json; sourceTree = "<group>"; };
+		FA1983111E8252CC00E642BC /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		FA1983121E8252CC00E642BC /* SQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		FA1983131E8252CC00E642BC /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1982E61E8251E000E642BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC591F6D769844FDE7B6C0A /* Pods_ReadX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FA3258C1BAE7E7BA7B102B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66FB085E384FE0D0FFAA2C46 /* Pods-ReadX.debug.xcconfig */,
+				4938377C1B1E43C84824AFC2 /* Pods-ReadX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5A825603D6619096FE1FDEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD659A2C1FE8A55F2ED66E /* Pods_ReadX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA1982E01E8251E000E642BC = {
+			isa = PBXGroup;
+			children = (
+				FA1982EB1E8251E000E642BC /* ReadX */,
+				FA1982EA1E8251E000E642BC /* Products */,
+				79FA3258C1BAE7E7BA7B102B /* Pods */,
+				B5A825603D6619096FE1FDEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1982EA1E8251E000E642BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1982E91E8251E000E642BC /* ReadX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1982EB1E8251E000E642BC /* ReadX */ = {
+			isa = PBXGroup;
+			children = (
+				FA1983301E8252E300E642BC /* Rule */,
+				FA1983311E8252F000E642BC /* SQLite */,
+				FA1983321E82530200E642BC /* Kit */,
+				FA19832F1E8252D600E642BC /* Base */,
+				FA1983331E82531100E642BC /* Window */,
+				FA1982EC1E8251E000E642BC /* AppDelegate.swift */,
+				FA1983081E8252CC00E642BC /* BookSingle.swift */,
+				FA1983031E8252CC00E642BC /* BookRoomCell.swift */,
+				FA1983041E8252CC00E642BC /* BookRoomViewController.swift */,
+				FA1983051E8252CC00E642BC /* BookRoomViewController.xib */,
+				FA1982FE1E8252CC00E642BC /* BookAddViewController.swift */,
+				FA1982FF1E8252CC00E642BC /* BookAddViewController.xib */,
+				FA19830C1E8252CC00E642BC /* ReadBookViewController.swift */,
+				FA19830D1E8252CC00E642BC /* ReadBookViewController.xib */,
+				FA1983001E8252CC00E642BC /* BookChaptersCell.swift */,
+				FA1983011E8252CC00E642BC /* BookChaptersViewController.swift */,
+				FA1983021E8252CC00E642BC /* BookChaptersViewController.xib */,
+				FA1983061E8252CC00E642BC /* BookSettingViewController.swift */,
+				FA1983071E8252CC00E642BC /* BookSettingViewController.xib */,
+				FA1982EE1E8251E000E642BC /* Assets.xcassets */,
+				FA1982F01E8251E000E642BC /* MainMenu.xib */,
+				FA1982F31E8251E000E642BC /* Info.plist */,
+			);
+			path = ReadX;
+			sourceTree = "<group>";
+		};
+		FA19832F1E8252D600E642BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA1982F91E8252CC00E642BC /* BaseViewController.swift */,
+				FA1982FA1E8252CC00E642BC /* BaseViewController.xib */,
+				FA1982FB1E8252CC00E642BC /* BaseWindowController.swift */,
+				FA1982FC1E8252CC00E642BC /* BaseWindowController.xib */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		FA1983301E8252E300E642BC /* Rule */ = {
+			isa = PBXGroup;
+			children = (
+				FA1983101E8252CC00E642BC /* rule.json */,
+				FA1983111E8252CC00E642BC /* Rule.swift */,
+			);
+			name = Rule;
+			sourceTree = "<group>";
+		};
+		FA1983311E8252F000E642BC /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				FA19830B1E8252CC00E642BC /* db.sqlite3 */,
+				FA1983121E8252CC00E642BC /* SQLiteManager.swift */,
+			);
+			name = SQLite;
+			sourceTree = "<group>";
+		};
+		FA1983321E82530200E642BC /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				FA1983131E8252CC00E642BC /* Tools.swift */,
+				FA1982FD1E8252CC00E642BC /* Book.swift */,
+			);
+			name = Kit;
+			sourceTree = "<group>";
+		};
+		FA1983331E82531100E642BC /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				FA1983091E8252CC00E642BC /* BookWindowController.swift */,
+				FA19830A1E8252CC00E642BC /* BookWindowController.xib */,
+				FA19830E1E8252CC00E642BC /* ReadWindowController.swift */,
+				FA19830F1E8252CC00E642BC /* ReadWindowController.xib */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1982E81E8251E000E642BC /* ReadX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1982F61E8251E000E642BC /* Build configuration list for PBXNativeTarget "ReadX" */;
+			buildPhases = (
+				7B5C5BBCEBF95B9932E28C77 /* [CP] Check Pods Manifest.lock */,
+				FA1982E51E8251E000E642BC /* Sources */,
+				FA1982E61E8251E000E642BC /* Frameworks */,
+				FA1982E71E8251E000E642BC /* Resources */,
+				91DB2B60136215DD2FFE6F92 /* [CP] Embed Pods Frameworks */,
+				2937FB6CA29810DEAF736155 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadX;
+			productName = ReadX;
+			productReference = FA1982E91E8251E000E642BC /* ReadX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1982E11E8251E000E642BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Von;
+				TargetAttributes = {
+					FA1982E81E8251E000E642BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA1982E41E8251E000E642BC /* Build configuration list for PBXProject "ReadX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA1982E01E8251E000E642BC;
+			productRefGroup = FA1982EA1E8251E000E642BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1982E81E8251E000E642BC /* ReadX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1982E71E8251E000E642BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1983281E8252CC00E642BC /* ReadBookViewController.xib in Resources */,
+				FA1983171E8252CC00E642BC /* BaseWindowController.xib in Resources */,
+				FA1983261E8252CC00E642BC /* db.sqlite3 in Resources */,
+				FA1983251E8252CC00E642BC /* BookWindowController.xib in Resources */,
+				FA1983151E8252CC00E642BC /* BaseViewController.xib in Resources */,
+				FA19832B1E8252CC00E642BC /* rule.json in Resources */,
+				FA1982EF1E8251E000E642BC /* Assets.xcassets in Resources */,
+				FA1983201E8252CC00E642BC /* BookRoomViewController.xib in Resources */,
+				FA1982F21E8251E000E642BC /* MainMenu.xib in Resources */,
+				FA19831A1E8252CC00E642BC /* BookAddViewController.xib in Resources */,
+				FA19832A1E8252CC00E642BC /* ReadWindowController.xib in Resources */,
+				FA1983221E8252CC00E642BC /* BookSettingViewController.xib in Resources */,
+				FA19831D1E8252CC00E642BC /* BookChaptersViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2937FB6CA29810DEAF736155 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadX/Pods-ReadX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B5C5BBCEBF95B9932E28C77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91DB2B60136215DD2FFE6F92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadX/Pods-ReadX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1982E51E8251E000E642BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA19831C1E8252CC00E642BC /* BookChaptersViewController.swift in Sources */,
+				FA1983291E8252CC00E642BC /* ReadWindowController.swift in Sources */,
+				FA1983231E8252CC00E642BC /* BookSingle.swift in Sources */,
+				FA19831B1E8252CC00E642BC /* BookChaptersCell.swift in Sources */,
+				FA1983211E8252CC00E642BC /* BookSettingViewController.swift in Sources */,
+				FA1983181E8252CC00E642BC /* Book.swift in Sources */,
+				FA19832C1E8252CC00E642BC /* Rule.swift in Sources */,
+				FA1983191E8252CC00E642BC /* BookAddViewController.swift in Sources */,
+				FA19832E1E8252CC00E642BC /* Tools.swift in Sources */,
+				FA19831F1E8252CC00E642BC /* BookRoomViewController.swift in Sources */,
+				FA1982ED1E8251E000E642BC /* AppDelegate.swift in Sources */,
+				FA1983241E8252CC00E642BC /* BookWindowController.swift in Sources */,
+				FA19832D1E8252CC00E642BC /* SQLiteManager.swift in Sources */,
+				FA19831E1E8252CC00E642BC /* BookRoomCell.swift in Sources */,
+				FA1983141E8252CC00E642BC /* BaseViewController.swift in Sources */,
+				FA1983271E8252CC00E642BC /* ReadBookViewController.swift in Sources */,
+				FA1983161E8252CC00E642BC /* BaseWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA1982F01E8251E000E642BC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1982F11E8251E000E642BC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA1982F41E8251E000E642BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA1982F51E8251E000E642BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		FA1982F71E8251E000E642BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FB085E384FE0D0FFAA2C46 /* Pods-ReadX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReadX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianxinvideo.ReadX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA1982F81E8251E000E642BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4938377C1B1E43C84824AFC2 /* Pods-ReadX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReadX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianxinvideo.ReadX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1982E41E8251E000E642BC /* Build configuration list for PBXProject "ReadX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1982F41E8251E000E642BC /* Debug */,
+				FA1982F51E8251E000E642BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1982F61E8251E000E642BC /* Build configuration list for PBXNativeTarget "ReadX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1982F71E8251E000E642BC /* Debug */,
+				FA1982F81E8251E000E642BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1982E11E8251E000E642BC /* Project object */;
+}
