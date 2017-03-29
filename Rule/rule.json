@@ -1,0 +1,56 @@
+{
+  "version": "1.2",
+  "rules": [{
+      "site": "百书斋",
+      "host": "baishuzhai.com",
+      "bookUrlReg": "^http://baishuzhai.com/ibook/\\d{2}/\\d{5}/$",
+      "bookNumberReg": "\\d{2}/\\d{5}",
+      "nameRule": {
+        "sourceUrl": "http://baishuzhai.com/ibook/bookNumber/",
+        "xpath": "//div[@id=\"fmimg\"]/img/@alt",
+        "value": "xpath"
+      },
+      "imgRule": {
+        "sourceUrl": "http://baishuzhai.com/ibook/bookNumber/",
+        "xpath": "//div[@id=\"fmimg\"]/img/@src",
+        "value": "http://baishuzhai.comxpath"
+      },
+      "chaptersRule": {
+        "sourceUrl": "http://baishuzhai.com/ibook/bookNumber/",
+        "xpath": "//div[@id=\"list\"]//a @href",
+        "value": "http://baishuzhai.comxpath"
+      },
+      "contentRule": {
+        "sourceUrl": "chaptersRule.value",
+        "xpath": "//div[@id=\"TXT\"]",
+        "value": "todo"
+      }
+    },
+    {
+      "site": "笔趣阁",
+      "host": "www.qu.la",
+      "bookUrlReg": "^http://www.qu.la/book/\\d{5}/$",
+      "bookNumberReg": "\\d{5}",
+      "nameRule": {
+        "sourceUrl": "http://www.qu.la/book/bookNumber/",
+        "xpath": "//div[@id=\"fmimg\"]/img/@alt",
+        "value": "xpath"
+      },
+      "imgRule": {
+        "sourceUrl": "http://www.qu.la/book/bookNumber/",
+        "xpath": "//div[@id=\"fmimg\"]/img/@src",
+        "value": "xpath"
+      },
+      "chaptersRule": {
+        "sourceUrl": "http://www.qu.la/book/bookNumber/",
+        "xpath": "//div[@id=\"list\"]//a @href",
+        "value": "http://www.qu.la/book/bookNumber/xpath"
+      },
+      "contentRule": {
+        "sourceUrl": "chaptersRule.value",
+        "xpath": "//div[@id=\"content\"]",
+        "value": "todo"
+      }
+    }
+  ]
+}
